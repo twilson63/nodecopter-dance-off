@@ -15,6 +15,7 @@
     "eslint": "^0.22.1"
   },
   "dependencies": {
+    "keypress": "^0.2.1",
     "rolling-spider": "^1.2.1",
     "temporal": "^0.4.0"
   }
