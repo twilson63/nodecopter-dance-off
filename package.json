@@ -1,0 +1,21 @@
+{
+  "name": "nodecopter-danceoff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "example": "node example.js"
+  },
+  "keywords": [],
+  "author": "Tom",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^0.22.1"
+  },
+  "dependencies": {
+    "rolling-spider": "^1.2.1",
+    "temporal": "^0.4.0"
+  }
+}
