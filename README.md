@@ -1,6 +1,6 @@
 # NodeCopter - DANCE OFF
 
-![Rolling Spider](http://www.parrot.com/static/images/theme/catalog/rolling_spider/details.jpg)
+![Rolling Spider](/spider.jpg)
 
 ## Lunch and Learn
 
