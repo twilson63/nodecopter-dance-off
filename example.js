@@ -1,3 +1,6 @@
+/*eslint-env node */
+"use strict";
+
 var RollingSpider = require("rolling-spider");
 var temporal = require("temporal");
 
