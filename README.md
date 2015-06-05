@@ -1,5 +1,7 @@
 # NodeCopter - DANCE OFF
 
+![Rolling Spider](http://www.parrot.com/static/images/theme/catalog/rolling_spider/details.jpg)
+
 ## Lunch and Learn
 
 In this weeks lunch and learn we are going to have some fun writing code! We are going to have a NodeCopter Dance Off!
