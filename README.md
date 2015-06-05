@@ -6,9 +6,9 @@ In this weeks lunch and learn we are going to have some fun writing code! We are
 
 ## What is a NodeCopter Dance Off?
 
-Is a competition on which developer can make the most interesting `NodeCopter Areial Dance Routine`
+It is a competition, which each developer will create an aerial routine using the minidrone and the rolling-spider module.
 
-We will be using minidrones and you can get started reviewing the documentation here:  
+You can get started reviewing the documentation here:  
 
 https://github.com/FluffyJack/node-rolling-spider#client-api
 
@@ -72,3 +72,4 @@ The group will vote for the best routine and the best in show, awards will be gi
 
     npm run lint
 
+### Have Fun!
