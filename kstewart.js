@@ -42,55 +42,49 @@ yourDrone.connect(function() {
         }
       },
       {
-        delay: 4000,
+        delay: 3000,
+        task: function() {
+          yourDrone.up({speed: 25, steps: 3});
+        }
+      },
+      {
+        delay: 1000,
+        task: function() {
+          yourDrone.forward({speed: 100, steps: 10});
+        }
+      },
+      {
+        delay: 500,
         task: function() {
           yourDrone.frontFlip();
         }
       },
       {
-        delay: 1500,
-        task: function() {
-          yourDrone.frontFlip();
-        }
-      },
-      {
-        delay: 1500,
-        task: function() {
-          yourDrone.frontFlip();
-        }
-      },
-      {
-        delay: 1500,
-        task: function() {
-          yourDrone.rightFlip();
-        }
-      },
-      {
-        delay: 1500,
-        task: function() {
-          yourDrone.rightFlip();
-        }
-      },
-      {
-        delay: 1500,
-        task: function() {
-          yourDrone.rightFlip();
-        }
-      },
-      {
-        delay: 1500,
+        delay: 500,
         task: function() {
           yourDrone.backFlip();
         }
       },
       {
-        delay: 1500,
+        delay: 1000,
         task: function() {
-          yourDrone.backFlip();
+          yourDrone.up({speed: 25, steps: 3});
         }
       },
       {
         delay: 1500,
+        task: function() {
+          yourDrone.clockwise({speed: 100, steps: 50});
+        }
+      },
+      {
+        delay: 200,
+        task: function() {
+          yourDrone.forward({speed: 100, steps: 5});
+        }
+      },
+      {
+        delay: 200,
         task: function() {
           yourDrone.backFlip();
         }
