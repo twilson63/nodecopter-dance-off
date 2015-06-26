@@ -13,7 +13,7 @@ keypress(process.stdin);
 process.stdin.setRawMode(true);
 process.stdin.resume();
 
-var yourDrone = new RollingSpider();
+var yourDrone = new RollingSpider('RS_W169241');
 
 yourDrone.connect(function() {
   yourDrone.setup(function() {
