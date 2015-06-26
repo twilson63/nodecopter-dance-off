@@ -47,7 +47,7 @@ drone.connect(function() {
           //3 seconds
           //potentially change speedto account for time before drop
           // 23 seconds until drop from this point
-          drone.up({steps: STEPS * 7, speed: SPEED * 5});
+          drone.up({steps: STEPS * 20, speed: SPEED * 5});
         }
       },
       {
@@ -107,17 +107,9 @@ drone.connect(function() {
         }
       },
       {
-        delay: 5000,
-        task: function() {
-          // 36 seconds
-          drone.down({steps: STEPS * 5});
-        }
-      },
-      {
         delay: 2000,
         task: function() {
           //38 seconds
-          drone.up({steps: STEPS * 10});
           drone.turnLeft({steps: STEPS * 50, speed: SPEED * 50});
         }
       },
