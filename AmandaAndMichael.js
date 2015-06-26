@@ -48,76 +48,76 @@ yourDrone.connect(function() {
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.down(100,10);
           yourDrone.flatTrim();
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.up(100,10);
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.down(100,10);
           yourDrone.flatTrim();
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.up(100,20);
           yourDrone.forward(100,20);
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.frontFlip();
           yourDrone.flatTrim();
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.down(100,15);
           yourDrone.flatTrim();
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.tiltRight();
           yourDrone.up(90,8);
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.down(90,8);
           yourDrone.flatTrim();
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.tiltLeft();
           yourDrone.up(80,6);
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.down(80,6);
           yourDrone.flatTrim();
         }
       },
       {
-        delay: 2000,
+        delay: 2500,
         task: function () {
           yourDrone.land();
         }
