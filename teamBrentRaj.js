@@ -43,32 +43,49 @@ drone.connect(function() {
         }
       },
       {
-        delay: 4000,
-        task: function() {
-          drone.up({steps: 10});
-          drone.backflip():
-        }
-      },
-      {
-        delay: 4000,
+        delay: 2000,
         task: function() {
           drone.up({steps: 10});
         }
       },
       {
-        delay: 0,
+        delay: 2000,
+        task: function() {
+          drone.backFlip();
+        }
+      },
+      {
+        delay: 2000,
+        task: function() {
+          drone.up({steps: 10});
+        }
+      },
+      {
+        delay: 2000,
         task: function() {
           drone.turnRight({speed: 100});
           drone.turnRight({speed: 100});
           drone.turnRight({speed: 100});
           drone.turnRight({speed: 100});
         }
-      }
+      },
       // 11ish seconds used so far
+      {
+        delay: 2000,
+        task: function() {
+          drone.up({steps: 10});
+        }
+      },
       {
         delay: 4000,
         task: function() {
           drone.leftFlip();
+        }
+      },
+      {
+        delay: 2000,
+        task: function() {
+          drone.up({steps: 10});
         }
       },
       {
@@ -80,17 +97,22 @@ drone.connect(function() {
       {
         delay: 2000,
         task: function() {
-          drone.down({steps: 20});
+          drone.up({steps: 10});
         }
       },
       {
-        delay: 0,
+        delay: 2000,
+        task: function() {
+          drone.down({steps: 5});
+        }
+      },
+      {
+        delay: 2000,
         task: function() {
           drone.turnLeft({speed: 100});
           drone.turnLeft({speed: 100});
           drone.turnLeft({speed: 100});
           drone.turnLeft({speed: 100});
-          drone.frontFlip({speed: 100});
         }
       },
       {
