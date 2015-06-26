@@ -13,16 +13,16 @@ keypress(process.stdin);
 process.stdin.setRawMode(true);
 process.stdin.resume();
 
-var yourDrone = new RollingSpider('RS_W169241');
+var drone = new RollingSpider();
 
-yourDrone.connect(function() {
-  yourDrone.setup(function() {
+drone.connect(function() {
+  drone.setup(function() {
     process.stdin.on("keypress", function (ch, key) {
       if (key && key.name === "m") {
-        yourDrone.emergency();
+        drone.emergency();
       }
       if (key && key.name === "q") {
-        yourDrone.land();
+        drone.land();
       }
       if (key && key.ctrl && key.name === "c") {
         process.stdin.pause();
@@ -36,15 +36,15 @@ yourDrone.connect(function() {
       {
         delay: 0,
         task: function () {
-          yourDrone.flatTrim();
-          yourDrone.startPing();
-          yourDrone.takeOff();
+          drone.flatTrim();
+          drone.startPing();
+          drone.takeOff();
         }
       },
       {
         delay: 5000,
         task: function () {
-          yourDrone.land();
+          drone.land();
         }
       }]);
   });
