@@ -44,34 +44,32 @@ yourDrone.connect(function() {
       {
         delay: 3000,
         task: function () {
-          yourDrone.up(100,10);
+          yourDrone.up({speed:100,steps:10});
         }
       },
       {
         delay: 2500,
         task: function () {
-          yourDrone.down(100,10);
-          yourDrone.flatTrim();
+          yourDrone.down({speed:100,steps:10});
         }
       },
       {
         delay: 2500,
         task: function () {
-          yourDrone.up(100,10);
+          yourDrone.up({speed:100,steps:10});
         }
       },
       {
         delay: 2500,
         task: function () {
-          yourDrone.down(100,10);
-          yourDrone.flatTrim();
+          yourDrone.down({speed:100,steps:10});
         }
       },
       {
         delay: 2500,
         task: function () {
-          yourDrone.up(100,20);
-          yourDrone.forward(100,20);
+          yourDrone.up({speed:100,steps:20});
+          yourDrone.forward({speed:100,steps:20});
         }
       },
       {
@@ -84,7 +82,7 @@ yourDrone.connect(function() {
       {
         delay: 2500,
         task: function () {
-          yourDrone.down(100,15);
+          yourDrone.down({speed:100,steps:15});
           yourDrone.flatTrim();
         }
       },
@@ -92,13 +90,13 @@ yourDrone.connect(function() {
         delay: 2500,
         task: function () {
           yourDrone.tiltRight();
-          yourDrone.up(90,8);
+          yourDrone.up({speed:90,steps:8});
         }
       },
       {
         delay: 2500,
         task: function () {
-          yourDrone.down(90,8);
+          yourDrone.down({speed:90,steps:8});
           yourDrone.flatTrim();
         }
       },
@@ -106,13 +104,13 @@ yourDrone.connect(function() {
         delay: 2500,
         task: function () {
           yourDrone.tiltLeft();
-          yourDrone.up(80,6);
+          yourDrone.up({speed:80,steps:6});
         }
       },
       {
         delay: 2500,
         task: function () {
-          yourDrone.down(80,6);
+          yourDrone.down({speed:80,steps:6});
           yourDrone.flatTrim();
         }
       },
