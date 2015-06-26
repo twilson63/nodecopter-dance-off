@@ -71,7 +71,7 @@ yourDrone.connect(function() {
       }];
 
     var end = [{
-      delay: 5000,
+      delay: 1000,
       task: function() {
         yourDrone.backFlip();
       }
@@ -85,15 +85,17 @@ yourDrone.connect(function() {
 
     var hokey = function() {
       function turn() {
-        yourDrone.forward({ steps: 10 });
-        yourDrone.left({ steps: 2 });
+        yourDrone.forward({ steps: 10 }, function() {
+          yourDrone.clockwise({ steps: 2 });
+        });
+
       }
 
       var pokey = [{
         delay: 3000,
         task: turn
       }];
-      for(var i = 0; i < 100; i++) {
+      for(var i = 0; i < 50; i++) {
         pokey.push({
           delay: 100,
           task: turn
