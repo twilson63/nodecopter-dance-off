@@ -44,75 +44,80 @@ yourDrone.connect(function() {
       {
         delay: 3000,
         task: function () {
-          yourDrone.up(50, 25);
+          yourDrone.up(100,10);
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.down(50,25);
+          yourDrone.down(100,10);
+          yourDrone.flatTrim();
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.up(50,25);
+          yourDrone.up(100,10);
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.down(50,25);
+          yourDrone.down(100,10);
+          yourDrone.flatTrim();
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.up(50, 25);
-          yourDrone.forward(50,25);
+          yourDrone.up(100,20);
+          yourDrone.forward(100,20);
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
           yourDrone.frontFlip();
-
+          yourDrone.flatTrim();
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.down(50,25);
+          yourDrone.down(100,15);
+          yourDrone.flatTrim();
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
           yourDrone.tiltRight();
-          yourDrone.up(40,20);
+          yourDrone.up(90,8);
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.down(40,20);
+          yourDrone.down(90,8);
+          yourDrone.flatTrim();
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
           yourDrone.tiltLeft();
-          yourDrone.up(30,15);
+          yourDrone.up(80,6);
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
-          yourDrone.down(30,15);
+          yourDrone.down(80,6);
+          yourDrone.flatTrim();
         }
       },
       {
-        delay: 250,
+        delay: 2000,
         task: function () {
           yourDrone.land();
         }
