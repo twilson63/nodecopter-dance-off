@@ -42,19 +42,19 @@ yourDrone.connect(function() {
       {
         delay: 5000,
         task: function() {
-          yourDrone.forward({ steps: 25 });
+          yourDrone.forward({ steps: 15 });
         }
       },
       {
         delay: 1000,
         task: function() {
-          yourDrone.backward({ steps: 25 });
+          yourDrone.backward({ steps: 15 });
         }
       },
       {
         delay: 1000,
         task: function() {
-          yourDrone.forward({ steps: 25 });
+          yourDrone.forward({ steps: 15 });
         }
       },
       {
